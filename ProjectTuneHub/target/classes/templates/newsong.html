@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>song</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/newsong.css}">
+	</head>
+	<body>
+		<header>
+		<img src="https://tse4.mm.bing.net/th?id=OIP._zTdrvhBquZNZHB_JsXEvQHaHU&pid=Api&P=0&h=220" height="50px" width="70px">
+		<h1>Music can change the world</h1>
+	</header>
+	<form action="addsong" method="post">
+    <label> song name</label>
+    <input type="text" name="name" >
+    <br>
+    <label> song artist</label>
+    <input type="text" name="artist">
+    <br>
+    <label>genre</label>
+    <input type="text" name="genre">
+    <br>
+    <label>link</label>
+    <input type="text" name="link">
+    <input type="submit" value="add song">
+    
+</form>
+<footer id="foot">
+			<p>This site is protected by reCAPTCHA and the 
+				Google <u><a href="privacypolicys" class="b"> privacypolicy</a></u>
+			and <u><a href="term">termsapply</a></u> .</p>
+		</footer>
+</body>
+</html>

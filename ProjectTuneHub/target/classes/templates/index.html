@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTER</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/index.css}">
+  
+</head>
+<body>
+	<header>
+		<img src="https://tse4.mm.bing.net/th?id=OIP._zTdrvhBquZNZHB_JsXEvQHaHU&pid=Api&P=0&h=220" height="50px" width="70px">
+		<h1>Music can change the world</h1>
+	</header>
+	
+	<form action="validate" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="please enter your Email" >
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="password" >
+            <input type="submit" value="Login">
+        </form>
+		<div class="a">
+			<p>Don't have account? <a href="register">sign up for tunehub</a></p>
+     
+		</div>
+		
+		<footer id="foot">
+			<p>This site is protected by reCAPTCHA and the 
+				Google <u><a href="privacypolicys" class="b"> privacypolicy</a></u>
+			and <u><a href="term">termsapply</a></u> .</p>
+		</footer>
+		
+
+</body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>songs</title>
+		<link rel="stylesheet" type="text/css" th:href="@{viewplaylist.css}">
+		
+	</head>
+	<body>
+		<header>
+		<img src="https://tse4.mm.bing.net/th?id=OIP._zTdrvhBquZNZHB_JsXEvQHaHU&pid=Api&P=0&h=220" height="50px" width="70px">
+		<h1>Music can change the world</h1>
+	</header>
+		
+		<h1>AVAILABLE PLAYLISTS</h1>
+		<table border="1">
+			<tr>
+				<th>id</th>
+				<th>name</th>
+				
+			</tr>
+			<tr th:each="song:${playlists}">
+				<td th:text="${song.id}"></td>
+				<td>
+				<ul>
+					<li th:each="song:${song.songs}">
+						<span th:text="${song.name}"></span>
+						<audio controls>
+					<source th:src="${song.link}">
+				</audio>
+						
+					</li>
+				</ul>
+				</td>
+				
+				
+			</tr>
+			
+		</table>
+		
+		</body>
+</html>

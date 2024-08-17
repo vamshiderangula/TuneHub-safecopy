@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regestration form</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/register.css}">
+</head>
+<body>
+	 <header>
+		<h1>Tune Hub</h1>
+	</header>
+  <form  action="register" method="post">
+	<h2>Regestration Form</h2>
+	  
+	  <label for="UserName">UserName:</label><br>
+	  <input type="text" id="username" name="username" placeholder="please enter your full name">
+	  <br><br>
+	  
+	  <label for="email">email:</label><br>
+	  <input type="text" id="email" name="email" placeholder="enter your email">
+	  <br><br>
+	  
+	  <label for="password">password:</label><br>
+	  <input type="password"  name="password" placeholder="password">
+	  <br><br>
+	  
+	  <label>Gender:</label><br>
+	  <input type="radio" name="gender" value="male">
+	  <label>male</label>
+	  <input type="radio" name="gender" value="Female">
+	  <label>Female</label>
+	  <input type="radio" name="gender" value="other">
+	  <label>other</label><br>
+	  
+	  <label>Role:</label><br>
+	  <label>Admin</label>
+	  <input type="radio" name="role" value="admin">
+	  <label>customer</label>
+	  <input type="radio" name="role" value="customer"><br><br>
+	  
+	  <label>Address:</label><br>
+	  <textarea name="address" placeholder="enter your compleate adress"></textarea>
+	  <br>
+	  <input type="submit" value="register">
+  </form>
+		<footer id="foot">
+			<p>This site is protected by reCAPTCHA and the 
+				Google <u>Privacy Policy</u> 
+			and <u>Terms of Service</u> apply.</p>
+		</footer>
+</body>
+</html>

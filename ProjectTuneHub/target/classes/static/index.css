@@ -1,0 +1,83 @@
+/* index.css */
+
+/* Reset default margin and padding */
+body, h1, form, label, input, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set body background color and font family */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+h1 {
+  margin: 0;
+}
+
+/* Form styles */
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.b{
+	
+}
+
+.a {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  color: #fff;
+}

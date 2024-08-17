@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>songs</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/displaysongs.css}">
+	</head>
+	<body>
+		<header>
+		<img src="https://tse4.mm.bing.net/th?id=OIP._zTdrvhBquZNZHB_JsXEvQHaHU&pid=Api&P=0&h=220" height="50px" width="70px">
+		<h1>Music can change the world</h1>
+	</header>
+		<h1>SONGS</h1>
+		
+		<table border="1">
+			<tr>
+				<th>name</th>
+				<th>artist</th>
+				<th>genre</th>
+				<th>play</th>
+			</tr>
+			<tr th:each="song:${song}">
+				<td th:text="${song.name}"></td>
+				<td th:text="${song.artist}"></td>
+				<td th:text="${song.genre}"></td>
+				<td>
+				<audio controls>
+					<source th:src="${song.link}">
+				</audio>
+				</td>
+				
+			</tr>
+			
+		</table>
+		<footer id="foot">
+			<p>This site is protected by reCAPTCHA and the 
+				Google <u><a href="privacypolicys" class="b"> privacypolicy</a></u>
+			and <u><a href="term">termsapply</a></u> .</p>
+		</footer>
+	</body>
+</html>

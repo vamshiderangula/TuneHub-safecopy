@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" th:href="@{createplaylist.css}">
+</head>
+<body>
+	<header>
+		<img src="https://tse4.mm.bing.net/th?id=OIP._zTdrvhBquZNZHB_JsXEvQHaHU&pid=Api&P=0&h=220" height="50px" width="70px">
+		<h1>Music can change the world</h1>
+	</header>
+	<form action="addplaylist" method="Post">
+		<label>playlist Name</label>
+		<input type="text" name="name"><br>
+		<div th:each="song:${song}">
+		<input type="checkbox" th:name="songs" th:value="${song.id}">
+		<label th:text="${song.name}">Song1</label>
+		</div>
+		<input type="submit" value="ADD PLAYLIST">
+	</form>
+		<footer id="foot">
+			<p>This site is protected by reCAPTCHA and the 
+				Google <u><a href="privacypolicys" class="b"> privacypolicy</a></u>
+			and <u><a href="term">termsapply</a></u> .</p>
+		</footer>
+</body>
+</html>
